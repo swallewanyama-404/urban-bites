@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu | Urban Bites</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="index.html" class="logo">Urban<span>Bites</span></a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html" class="active">Menu</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="order.html">Order</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="order.html" class="btn btn-gold btn-sm nav-cta">Order Now</a>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu" style="display:none;">
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Menu</a>
+  <a href="gallery.html">Gallery</a><a href="order.html">Order</a><a href="contact.html">Contact</a>
+  <a href="order.html" class="btn btn-gold">Order Now</a>
+</div>
+
+<div class="page-body">
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1400&q=80');"></div>
+    <div class="page-hero-content">
+      <span class="section-label">Explore</span>
+      <h1>Our Signature Menu</h1>
+    </div>
+  </div>
+
+  <!-- FEATURED CARDS -->
+  <section class="menu-section">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">Signature Dishes</span>
+        <h2 class="section-title">Most <em>Loved</em> Items</h2>
+      </div>
+
+      <div class="menu-tabs">
+        <button class="menu-tab active" data-cat="all">All</button>
+        <button class="menu-tab" data-cat="mains">Mains</button>
+        <button class="menu-tab" data-cat="breakfast">Breakfast</button>
+        <button class="menu-tab" data-cat="drinks">Drinks</button>
+        <button class="menu-tab" data-cat="desserts">Desserts</button>
+      </div>
+
+      <div class="menu-grid">
+        <div class="menu-card" data-cat="mains">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=600&q=80" alt="Burger">
+            <span class="menu-card-badge hot">Popular</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>Urban Signature Burger</h3>
+            <p>Wagyu beef, aged cheddar, caramelised onions and our secret house sauce.</p>
+            <div class="menu-card-footer">
+              <span class="price">UGX 18,000</span>
+              <a href="order.html" class="add-btn">+</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-cat="mains">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1604908177522-432ec8b76f27?w=600&q=80" alt="Chicken">
+            <span class="menu-card-badge new">New</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>Flame-Grilled Peri-Peri</h3>
+            <p>Half chicken marinated for 24 hours in local Ugandan spices.</p>
+            <div class="menu-card-footer">
+              <span class="price">UGX 25,000</span>
+              <a href="order.html" class="add-btn">+</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-cat="mains">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80" alt="Salad">
+          </div>
+          <div class="menu-card-body">
+            <h3>Garden Fresh Harvest</h3>
+            <p>Organic greens sourced directly from local Kampala farmers.</p>
+            <div class="menu-card-footer">
+              <span class="price">UGX 12,000</span>
+              <a href="order.html" class="add-btn">+</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-cat="breakfast">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&q=80" alt="Rolex">
+          </div>
+          <div class="menu-card-body">
+            <h3>Rolex Special</h3>
+            <p>Uganda's iconic classic — eggs, vegetables, rolled in a fresh chapati.</p>
+            <div class="menu-card-footer">
+              <span class="price">UGX 8,000</span>
+              <a href="order.html" class="add-btn">+</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-cat="drinks">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1534353341073-02be5c67bfde?w=600&q=80" alt="Juice">
+          </div>
+          <div class="menu-card-body">
+            <h3>Fresh Passion Juice</h3>
+            <p>Cold-pressed passion fruit blended with ginger and raw honey.</p>
+            <div class="menu-card-footer">
+              <span class="price">UGX 6,000</span>
+              <a href="order.html" class="add-btn">+</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-cat="desserts">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&q=80" alt="Dessert">
+            <span class="menu-card-badge new">New</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>Chocolate Lava Cake</h3>
+            <p>Warm dark chocolate cake with a molten centre and vanilla cream.</p>
+            <div class="menu-card-footer">
+              <span class="price">UGX 14,000</span>
+              <a href="order.html" class="add-btn">+</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FULL MENU TABLE -->
+  <section class="menu-table-section">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">Full Menu</span>
+        <h2 class="section-title">Complete <em>Price List</em></h2>
+      </div>
+      <table class="menu-table">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Price (UGX)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Urban Signature Burger</td><td>Mains</td><td>Wagyu beef, cheddar, secret sauce</td><td>18,000</td></tr>
+          <tr><td>Flame-Grilled Peri-Peri</td><td>Mains</td><td>Half chicken, 24hr marinated</td><td>25,000</td></tr>
+          <tr><td>Garden Fresh Harvest</td><td>Mains</td><td>Organic greens, local farm</td><td>12,000</td></tr>
+          <tr><td>Rolex Special</td><td>Breakfast</td><td>Eggs, veggies, chapati</td><td>8,000</td></tr>
+          <tr><td>Fresh Passion Juice</td><td>Drinks</td><td>Cold-pressed, ginger &amp; honey</td><td>6,000</td></tr>
+          <tr><td>Chocolate Lava Cake</td><td>Desserts</td><td>Dark chocolate, vanilla cream</td><td>14,000</td></tr>
+          <tr><td>Matoke &amp; Groundnut Stew</td><td>Mains</td><td>Traditional Ugandan classic</td><td>15,000</td></tr>
+          <tr><td>Masala Chai</td><td>Drinks</td><td>Spiced milk tea</td><td>4,500</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- SUBSCRIBE -->
+  <div class="subscribe-strip">
+    <div class="subscribe-text">
+      <h3>Never Miss a New Dish</h3>
+      <p>Subscribe for weekly menu updates and exclusive member offers.</p>
+    </div>
+    <div class="subscribe-form">
+      <input type="email" placeholder="Your email address">
+      <button type="button">Subscribe</button>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Urban<span>Bites</span></a>
+        <p>Crafting unforgettable dining experiences in the heart of Kampala since 2024.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="order.html">Order</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>📍 Kampala, Uganda</p>
+        <p>📞 +256 700 123456</p>
+        <p>✉️ info@urbanbites.ug</p>
+      </div>
+    </div>
+    <div class="footer-bottom" style="border-top:1px solid rgba(255,255,255,0.06);margin-top:60px;padding:24px 5%;">
+      <p>© 2024 Urban Bites. All rights reserved.</p>
+    </div>
+  </footer>
+</div>
+
+<script>
+  const header = document.getElementById('siteHeader');
+  window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 40));
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburger.addEventListener('click', () => {
+    const open = mobileMenu.style.display === 'block';
+    mobileMenu.style.display = open ? 'none' : 'block';
+    hamburger.classList.toggle('open', !open);
+  });
+  const tabs = document.querySelectorAll('.menu-tab');
+  const cards = document.querySelectorAll('.menu-card');
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      const cat = tab.dataset.cat;
+      cards.forEach(c => { c.style.display = (cat === 'all' || c.dataset.cat === cat) ? 'block' : 'none'; });
+    });
+  });
+</script>
+</body>
+</html>

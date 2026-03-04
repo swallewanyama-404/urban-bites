@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Urban Bites</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="index.html" class="logo">Urban<span>Bites</span></a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Menu</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="order.html">Order</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="order.html" class="btn btn-gold btn-sm nav-cta">Order Now</a>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu" style="display:none;">
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Menu</a>
+  <a href="gallery.html">Gallery</a><a href="order.html">Order</a><a href="contact.html">Contact</a>
+  <a href="order.html" class="btn btn-gold">Order Now</a>
+</div>
+
+<div class="page-body">
+
+  <div class="page-hero">
+    <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=1400&q=80');"></div>
+    <div class="page-hero-content">
+      <span class="section-label">Visual Feast</span>
+      <h1>Food Gallery</h1>
+    </div>
+  </div>
+
+  <section class="gallery-section">
+    <div class="container">
+      <div class="section-head centered">
+        <span class="section-label">Photography</span>
+        <h2 class="section-title">A Feast for the <em>Eyes</em></h2>
+        <p class="section-subtitle">Every dish is a work of art. Here's a glimpse into the Urban Bites kitchen.</p>
+      </div>
+      <div class="gallery-masonry">
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80" alt="Salad bowl">
+          <div class="gallery-item-overlay">🍃</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=600&q=80" alt="Burger">
+          <div class="gallery-item-overlay">🍔</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80" alt="Pizza">
+          <div class="gallery-item-overlay">🍕</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1555992336-03a23c8a1b05?w=600&q=80" alt="Pasta">
+          <div class="gallery-item-overlay">🍝</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1604908177522-432ec8b76f27?w=600&q=80" alt="Chicken">
+          <div class="gallery-item-overlay">🍗</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Fine dining">
+          <div class="gallery-item-overlay">✨</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1534353341073-02be5c67bfde?w=600&q=80" alt="Drinks">
+          <div class="gallery-item-overlay">🥤</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&q=80" alt="Dessert">
+          <div class="gallery-item-overlay">🍫</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&q=80" alt="Breakfast">
+          <div class="gallery-item-overlay">🍳</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX MODAL -->
+  <div id="lightbox" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.92);z-index:9999;align-items:center;justify-content:center;">
+    <button id="lightboxClose" style="position:absolute;top:24px;right:32px;background:none;border:none;color:#fff;font-size:2rem;cursor:pointer;">&times;</button>
+    <img id="lightboxImg" style="max-width:90vw;max-height:85vh;border-radius:12px;object-fit:contain;" alt="Gallery image">
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Urban<span>Bites</span></a>
+        <p>Premium dining experiences in Kampala, Uganda.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="services.html">Menu</a></li>
+          <li><a href="order.html">Order</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>📍 Kampala, Uganda</p>
+        <p>📞 +256 700 123456</p>
+        <p>✉️ info@urbanbites.ug</p>
+      </div>
+    </div>
+    <div class="footer-bottom" style="border-top:1px solid rgba(255,255,255,0.06);margin-top:60px;padding:24px 5%;">
+      <p>© 2024 Urban Bites. All rights reserved.</p>
+    </div>
+  </footer>
+</div>
+
+<script>
+  const header = document.getElementById('siteHeader');
+  window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 40));
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburger.addEventListener('click', () => {
+    const open = mobileMenu.style.display === 'block';
+    mobileMenu.style.display = open ? 'none' : 'block';
+    hamburger.classList.toggle('open', !open);
+  });
+
+  // Lightbox
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightboxImg');
+  document.querySelectorAll('.gallery-item img').forEach(img => {
+    img.style.cursor = 'pointer';
+    img.addEventListener('click', () => {
+      lightboxImg.src = img.src;
+      lightbox.style.display = 'flex';
+    });
+  });
+  document.getElementById('lightboxClose').addEventListener('click', () => lightbox.style.display = 'none');
+  lightbox.addEventListener('click', e => { if (e.target === lightbox) lightbox.style.display = 'none'; });
+</script>
+</body>
+</html>
