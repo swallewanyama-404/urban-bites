@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Now | Urban Bites</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="index.html" class="logo">Urban<span>Bites</span></a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Menu</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="order.html" class="active">Order</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="order.html" class="btn btn-gold btn-sm nav-cta">Order Now</a>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu" style="display:none;">
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Menu</a>
+  <a href="gallery.html">Gallery</a><a href="order.html">Order</a><a href="contact.html">Contact</a>
+  <a href="order.html" class="btn btn-gold">Order Now</a>
+</div>
+
+<div class="page-body">
+
+  <div class="page-hero">
+    <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=1400&q=80');"></div>
+    <div class="page-hero-content">
+      <span class="section-label">Fast Delivery</span>
+      <h1>Place Your Order</h1>
+    </div>
+  </div>
+
+  <section class="order-section">
+    <div class="container">
+      <div class="order-inner">
+        <div class="order-info">
+          <span class="section-label">Why Order With Us</span>
+          <h2>Hot, Fresh &amp; <em>Fast</em></h2>
+          <p>Experience restaurant-quality food delivered to your door in under 30 minutes. No compromise on taste, temperature, or quality.</p>
+          <div class="order-benefits">
+            <div class="benefit-item">
+              <div class="benefit-icon">⚡</div>
+              <div class="benefit-text">
+                <h4>30-Min Delivery</h4>
+                <p>We guarantee your order arrives within 30 minutes across Kampala.</p>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon">🌿</div>
+              <div class="benefit-text">
+                <h4>Fresh Ingredients</h4>
+                <p>All meals prepared fresh daily using locally sourced produce.</p>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon">🏆</div>
+              <div class="benefit-text">
+                <h4>Earn Loyalty Points</h4>
+                <p>Every order earns points redeemable for free meals and discounts.</p>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon">📞</div>
+              <div class="benefit-text">
+                <h4>Live Order Tracking</h4>
+                <p>Track your order in real-time with SMS updates from our team.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-form-card">
+          <h3>Order Details</h3>
+          <div id="successMsg" style="display:none;background:#d4edda;color:#155724;padding:16px 20px;border-radius:10px;margin-bottom:24px;font-size:0.92rem;">
+            ✅ Order placed successfully! We'll call you to confirm within 5 minutes.
+          </div>
+          <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" id="name" placeholder="e.g. Sarah Nakato" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" id="phone" placeholder="+256 700 123456" required>
+            </div>
+            <div class="form-group">
+              <label>Select Meal</label>
+              <select id="meal" required>
+                <option value="" disabled selected>Choose a dish</option>
+                <option>Urban Signature Burger — UGX 18,000</option>
+                <option>Flame-Grilled Peri-Peri — UGX 25,000</option>
+                <option>Rolex Special — UGX 8,000</option>
+                <option>Garden Fresh Harvest — UGX 12,000</option>
+                <option>Fresh Passion Juice — UGX 6,000</option>
+                <option>Chocolate Lava Cake — UGX 14,000</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Quantity</label>
+            <input type="number" id="qty" placeholder="1" min="1" max="20" value="1">
+          </div>
+          <div class="form-group">
+            <label>Delivery Address</label>
+            <textarea id="address" placeholder="Street, area, landmark near your location..." required></textarea>
+          </div>
+          <div class="form-group">
+            <label>Special Instructions (optional)</label>
+            <input type="text" id="notes" placeholder="e.g. No onions, extra sauce…">
+          </div>
+          <div class="form-submit">
+            <button class="btn btn-gold" type="button" id="submitOrder" style="width:100%;justify-content:center;">
+              🛒 Submit Order
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Urban<span>Bites</span></a>
+        <p>Fast delivery across Kampala. Fresh food, every time.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="services.html">Full Menu</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>📍 Kampala, Uganda</p>
+        <p>📞 +256 700 123456</p>
+        <p>✉️ info@urbanbites.ug</p>
+      </div>
+    </div>
+    <div class="footer-bottom" style="border-top:1px solid rgba(255,255,255,0.06);margin-top:60px;padding:24px 5%;">
+      <p>© 2024 Urban Bites. All rights reserved.</p>
+    </div>
+  </footer>
+</div>
+
+<script>
+  const header = document.getElementById('siteHeader');
+  window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 40));
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburger.addEventListener('click', () => {
+    const open = mobileMenu.style.display === 'block';
+    mobileMenu.style.display = open ? 'none' : 'block';
+    hamburger.classList.toggle('open', !open);
+  });
+
+  document.getElementById('submitOrder').addEventListener('click', () => {
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone').value;
+    const meal = document.getElementById('meal').value;
+    const address = document.getElementById('address').value;
+    if (!name || !phone || !meal || !address) {
+      alert('Please fill in all required fields.');
+      return;
+    }
+    document.getElementById('successMsg').style.display = 'block';
+    window.scrollTo({ top: document.getElementById('successMsg').getBoundingClientRect().top + window.scrollY - 100, behavior: 'smooth' });
+    ['name','phone','meal','address','notes'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el.tagName === 'SELECT') el.selectedIndex = 0;
+      else el.value = '';
+    });
+    document.getElementById('qty').value = '1';
+  });
+</script>
+</body>
+</html>
